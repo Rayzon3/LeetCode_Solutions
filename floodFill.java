@@ -9,7 +9,7 @@ class floodFillSolution {
     }
 
     public static void fill(int[][] image, int sr, int sc, int oldColor, int newColor){
-        if(sr < 0 || sc < 0 || sr >= image.length || sc >= image.length || image[sr][sc] != oldColor){
+        if(sr < 0 || sc < 0 || sr >= image.length || sc >= image[0].length || image[sr][sc] != oldColor){
             return;
         }
         image[sr][sc] = newColor;
